@@ -31,8 +31,6 @@ public class Student extends Question{
 
     //Class Methods
     public void answer_question() {
-        //String answer = "";
-
         //Answer multiple choice question
         if (getType().equals("multiple choice")) {
             setMc_answer();
@@ -44,8 +42,6 @@ public class Student extends Question{
             setSc_answer();
             String sc_answer = getSc_answer();
             setAnswer(sc_answer);
-            //answer = sc_answer;
         }
-        //return answer;
     }
 }

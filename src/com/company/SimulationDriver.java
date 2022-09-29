@@ -18,11 +18,9 @@ public class SimulationDriver {
         }
 
         //Generate answers for all students
-        //String answer;
         for (int i=0; i < num_of_students; i++) {
-            //Get answer from student and set it for the VotingService object
-            //answer = students[i].answer_question();
-            //vs.setAnswer(answer);
+            //Get answer from student and set it's answer for
+            //the VotingService object
             students[i].answer_question();
             vs.setAnswer(students[i].getAnswer());
 
